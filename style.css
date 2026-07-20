@@ -1,0 +1,219 @@
+        
+       *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+       }
+      .Navbarmain{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        background-color:white;
+        border-bottom: seashell;
+      }
+      .leftnavbar{
+        display: flex;
+        list-style-type: none;
+       
+      }
+      
+      .myntralogo{
+        border: 1px solid black;
+        height: 30px;
+        width: 30px;
+      }
+      .leftnavbarul{
+        list-style-type: none;
+      }
+      .leftnavlist{
+        display: inline-block;
+        margin-top:10px;
+      }
+      .leftnavname:link{
+        text-decoration: none;
+        color:black;
+        padding:15px;
+
+      }
+      .leftnavname:hover{
+        color:black;
+        border-bottom: 3px solid blue;
+      }
+      .leftnavname:active{
+        color:black;
+      }
+      .leftnavname:visited{
+        color:black;
+      }
+      /*Right Nav css is mentioned below*/
+
+      .rightnavbar{
+        display: flex;
+        
+      }
+      .rightnavbarul{
+        display: flex;
+      }
+      .profile,.wishlist,.bag{
+        list-style-type: none;
+        padding:07px;
+      }
+      .searchicon{
+        display: flex;
+        position: relative;
+        margin-top: 20px;
+       
+      }
+     
+      .searchicon input{
+        height:30px;
+        background-color: rgb(241, 239, 239);
+        border-radius: 15px;
+      }
+
+       .searchicon input:focus{
+        background-color: white;
+       }
+      .searchicon i{
+        color:black;
+        margin-left: 5px;
+      }
+      .profile,.wishlist,.bag{
+        color:black;
+      }
+      .profile,.wishlist,.bag:active{
+        color:black;
+      }
+      .profile,.wishlist,.bag:visited{
+        color:black;
+      }
+
+      /* add section Css*/
+      .addsection{
+        background-color: white;
+        border:1px solid red;
+        height: 200px;
+        padding: 30px;
+        clip-path: polygon(10,10,10,10);
+      }
+      .addinnercontainer{
+        display: grid;
+        background-color:rgb(252, 220, 225);
+        grid-template-areas: 'l1c1 l1c2 p'
+                             'l2c1 l2c2 p';
+        height: 130px;
+        padding: 20px;
+        margin:0px 10%;
+       
+      }
+      .ln1col1{
+        grid-area:l1c1 ; 
+         border:1px solid red;
+      }
+      .ln1col1 h2{
+         font-size: 50px;  
+         color: transparent;
+         background: linear-gradient(to right,rgb(236, 205, 25),orange,rgb(180, 5, 5));       
+         background-clip: text;
+        }
+      .ln1col2{
+        grid-area:l1c2;
+        background-color: beige;
+        height:50px;
+        width: 400px;
+         border:1px solid red;
+        
+      }
+      .ln1col2 h2{
+        color:gray;
+        font-size: 30px;
+        margin-top: 08px;
+        
+      }
+      .per
+      {
+        grid-area: p;
+      }
+      .per h1{
+        font-size: 100px;
+        text-align: right;
+        color: transparent;
+        background: linear-gradient(rgb(238, 142, 209), pink,blue);
+        background-clip: text;
+      }
+      .ln2col1{
+        grid-area: l2c1;
+         border:1px solid red;
+      }
+      .ln2col1 h3{
+        font-size: 30px;
+        margin-bottom: 50px;
+      }
+      .ln2col2{
+        grid-area: l2c2;
+        
+      }
+      .ln2col2 h4{
+        color:rgb(65, 62, 62);
+        margin-top: 0px;
+        text-align: left;
+        text-indent: 25px;
+      }
+      /* 3rd section of display 4 pages on 4 dots*/
+      .slider{
+        height: 400px;
+        width:100%;
+        border: 1px solid black;
+        border-radius: 20px;
+        background-image:linear-gradient(to right,rgb(245, 242, 71),rgb(124, 138, 4));
+        display: flex;
+        gap: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .image img{
+        height:300px;
+        width: 300px;
+        object-fit: cover;
+      }
+      .slidedots{
+        text-align: center;
+      }
+      .btn1,.btn2,.btn3,.btn4{
+        color:gray;
+      }
+      /* Below is the code for cars of specific info */ 
+       .cards{
+            display:flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center; 
+            
+        }
+        .cards div{
+          border:5px solid coral;
+          padding:10px;
+          background-image:linear-gradient(to right,rgb(245, 179, 155),beige);
+        }
+        .cards img{
+          height: 200px;
+          width: 200px;
+          
+        }
+        .cards h2,h4{
+          text-align: center;
+        }
+        /* code for footer*/
+        /*first will create outer container and the put info in footer section*/
+        .footer1{
+          height:300px;
+          width:100%;
+          background-color: beige;
+          border:1px solid red;
+        }
+        
+        .address{
+          margin:20px 20px;
+         
+        }
